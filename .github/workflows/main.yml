@@ -1,0 +1,102 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      - name: Run a multi-line script
+        run: |
+          echo Test All
+          echo _______________________________Adam-Burggraaf________________________________________ 
+          cd Adam-Burggraaf
+          gradle test
+          cd ..
+          echo _______________________________Aiden-Bishop________________________________________ 
+          cd Aiden-Bishop
+          gradle test
+          cd ..
+          echo _______________________________Amethyst-Mak________________________________________
+          cd Amethyst-Mak
+          gradle test
+          cd ..
+          echo _______________________________Anthony-McUne________________________________________
+          cd Anthony-McUne
+          gradle test
+          cd ..
+          echo ______________________________Aubrey-Andrus________________________________________
+          cd Aubrey-Andrus
+          gradle test
+          cd ..
+          echo _______________________________Avenie-Jean-Baptiste-Say________________________________________
+          cd Avenie-Jean-Baptiste-Say
+          gradle test
+          cd ..
+          echo _______________________________Cada-Johnson________________________________________
+          cd Cada-Johnson
+          gradle test
+          cd ..
+          echo _______________________________Caleb-Passey________________________________________
+          cd Caleb-Passey
+          gradle test
+          cd ..
+          echo _______________________________Donovan-Barnes________________________________________
+          cd Donovan-Barnes
+          gradle test
+          cd ..
+          echo _______________________________Gabrielle-Langloisk________________________________________
+          cd Gabrielle-Langlois
+          gradle test
+          cd ..
+          echo _______________________________Hunter-Landini________________________________________
+          cd Hunter-Landini
+          gradle test
+          cd ..
+          echo _______________________________Jacob-Davenport________________________________________
+          cd Jacob-Davenport
+          gradle test
+          cd ..
+          echo _______________________________Jacob-Willoughby________________________________________
+          cd Jacob-Willoughby
+          gradle test
+          cd ..
+          echo _______________________________Kyson-Keate________________________________________
+          cd Kyson-Keate
+          gradle test
+          cd ..
+          echo _______________________________Mitchell-Holdstock________________________________________
+          cd Mitchell-Holdstock
+          gradle test
+          cd ..
+          echo _______________________________Nisha-Fletcher________________________________________
+          cd Nisha-Fletcher
+          gradle test
+          cd ..
+          echo _______________________________Veronique-Robledo________________________________________
+          cd Veronique-Robledo
+          gradle test
+          cd ..
+          echo _______________________________William-Steinbach________________________________________
+          cd William-Steinbach
+          gradle test
+          cd ..
