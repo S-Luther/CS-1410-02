@@ -27,12 +27,15 @@ jobs:
 
       - name: Run a multi-line script
         run: |
+          echo _______________________________Adam-Burggraaf________________________________________ 
           cd Adam-Burggraaf
           gradle test
           cd ..
+          echo _______________________________Aiden-Bishop________________________________________ 
           cd Aiden-Bishop
           gradle test
           cd ..
+          echo _______________________________Amethyst-Mak________________________________________
           cd Amethyst-Mak
           gradle test
           cd ..
