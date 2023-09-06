@@ -25,77 +25,128 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Run a multi-line script
+      - name: Adam-Burggraaf
         run: |
-          echo Test All
           echo _______________________________Adam-Burggraaf________________________________________ 
           cd Adam-Burggraaf
-          gradle test
+          gradle test --continue
           cd ..
+          
+          
+      - name: Aiden-Bishop
+        run: |
           echo _______________________________Aiden-Bishop________________________________________ 
           cd Aiden-Bishop
-          gradle test
+          gradle test --continue
           cd ..
+
+      - name: Amethyst-Mak
+        run: |
           echo _______________________________Amethyst-Mak________________________________________
           cd Amethyst-Mak
           gradle test
           cd ..
+
+      - name: Anthony-McUne
+        run: |
           echo _______________________________Anthony-McUne________________________________________
           cd Anthony-McUne
           gradle test
           cd ..
+
+      - name: Aubrey-Andrus
+        run: |
           echo ______________________________Aubrey-Andrus________________________________________
           cd Aubrey-Andrus
           gradle test
           cd ..
+
+      - name: Avenie-Jean-Baptiste-Say
+        run: |
           echo _______________________________Avenie-Jean-Baptiste-Say________________________________________
           cd Avenie-Jean-Baptiste-Say
           gradle test
           cd ..
+
+      - name: Cada-Johnson
+        run: |
           echo _______________________________Cada-Johnson________________________________________
           cd Cada-Johnson
           gradle test
           cd ..
+
+      - name: Caleb-Passey
+        run: |
           echo _______________________________Caleb-Passey________________________________________
           cd Caleb-Passey
           gradle test
           cd ..
+
+      - name: Donovan-Barnes
+        run: |
           echo _______________________________Donovan-Barnes________________________________________
           cd Donovan-Barnes
           gradle test
           cd ..
+
+      - name: Gabrielle-Langloisk
+        run: |
           echo _______________________________Gabrielle-Langloisk________________________________________
           cd Gabrielle-Langlois
           gradle test
           cd ..
+
+      - name: Hunter-Landini
+        run: |
           echo _______________________________Hunter-Landini________________________________________
           cd Hunter-Landini
           gradle test
           cd ..
+
+      - name: Jacob-Davenport
+        run: |
           echo _______________________________Jacob-Davenport________________________________________
           cd Jacob-Davenport
           gradle test
           cd ..
+
+      - name: Jacob-Willoughby
+        run: |
           echo _______________________________Jacob-Willoughby________________________________________
           cd Jacob-Willoughby
           gradle test
           cd ..
+
+      - name: Kyson-Keate
+        run: |
           echo _______________________________Kyson-Keate________________________________________
           cd Kyson-Keate
           gradle test
           cd ..
+
+      - name: Mitchell-Holdstock
+        run: |
           echo _______________________________Mitchell-Holdstock________________________________________
           cd Mitchell-Holdstock
           gradle test
           cd ..
+
+      - name: Nisha-Fletcher
+        run: |
           echo _______________________________Nisha-Fletcher________________________________________
           cd Nisha-Fletcher
           gradle test
           cd ..
+          
+      - name: Veronique-Robledo
+        run: |
           echo _______________________________Veronique-Robledo________________________________________
           cd Veronique-Robledo
           gradle test
           cd ..
+
+      - name: William-Steinbach
+        run: |
           echo _______________________________William-Steinbach________________________________________
           cd William-Steinbach
           gradle test
