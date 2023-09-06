@@ -12,7 +12,7 @@ import java.io.*;
 public class TestHello {
 
    @Test
-   public void testHelloWorld()
+   public void testHelloWorld() throws Exception 
    {
      PrintStream originalOut = System.out;
      ByteArrayOutputStream bos = new ByteArrayOutputStream();
@@ -21,16 +21,12 @@ public class TestHello {
      // action
      Hello.main(null);
 
-    try{
       // assertion
       assertEquals("Hello world!\n", bos.toString());
 
 
-    }catch(Exception e){
-    }finally{
             // undo the binding in System
       System.setOut(originalOut);
-    }
 
    }
 }
