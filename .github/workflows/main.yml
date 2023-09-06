@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  Adam-Burggraaf:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -27,124 +27,233 @@ jobs:
 
       - name: Adam-Burggraaf
         run: |
-          echo _______________________________Adam-Burggraaf________________________________________ 
           cd Adam-Burggraaf
           gradle test --continue
           cd ..
           
+  Aiden-Bishop:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3          
           
       - name: Aiden-Bishop
         run: |
-          echo _______________________________Aiden-Bishop________________________________________ 
           cd Aiden-Bishop
           gradle test --continue
           cd ..
+  Amethyst-Mak:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Amethyst-Mak
         run: |
-          echo _______________________________Amethyst-Mak________________________________________
           cd Amethyst-Mak
           gradle test
           cd ..
+  Anthony-McUne:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Anthony-McUne
         run: |
-          echo _______________________________Anthony-McUne________________________________________
           cd Anthony-McUne
           gradle test
           cd ..
+  Aubrey-Andrus:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Aubrey-Andrus
         run: |
-          echo ______________________________Aubrey-Andrus________________________________________
           cd Aubrey-Andrus
           gradle test
           cd ..
+  Avenie-Jean-Baptiste-Say:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Avenie-Jean-Baptiste-Say
         run: |
-          echo _______________________________Avenie-Jean-Baptiste-Say________________________________________
           cd Avenie-Jean-Baptiste-Say
           gradle test
           cd ..
+  Cada-Johnson:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Cada-Johnson
         run: |
-          echo _______________________________Cada-Johnson________________________________________
           cd Cada-Johnson
           gradle test
           cd ..
+  Caleb-Passey:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Caleb-Passey
         run: |
-          echo _______________________________Caleb-Passey________________________________________
           cd Caleb-Passey
           gradle test
           cd ..
+  Donovan-Barnes:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Donovan-Barnes
         run: |
-          echo _______________________________Donovan-Barnes________________________________________
           cd Donovan-Barnes
           gradle test
           cd ..
+  Gabrielle-Langloisk:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Gabrielle-Langloisk
         run: |
-          echo _______________________________Gabrielle-Langloisk________________________________________
           cd Gabrielle-Langlois
           gradle test
           cd ..
+  Hunter-Landini:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Hunter-Landini
         run: |
-          echo _______________________________Hunter-Landini________________________________________
           cd Hunter-Landini
           gradle test
           cd ..
+  Jacob-Davenport:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Jacob-Davenport
         run: |
-          echo _______________________________Jacob-Davenport________________________________________
           cd Jacob-Davenport
           gradle test
           cd ..
+  Jacob-Willoughby:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Jacob-Willoughby
         run: |
-          echo _______________________________Jacob-Willoughby________________________________________
           cd Jacob-Willoughby
           gradle test
           cd ..
+  Kyson-Keate:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Kyson-Keate
         run: |
-          echo _______________________________Kyson-Keate________________________________________
           cd Kyson-Keate
           gradle test
           cd ..
 
+          
+  Mitchell-Holdstock:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Mitchell-Holdstock
         run: |
-          echo _______________________________Mitchell-Holdstock________________________________________
           cd Mitchell-Holdstock
           gradle test
           cd ..
+  Nisha-Fletcher:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: Nisha-Fletcher
         run: |
-          echo _______________________________Nisha-Fletcher________________________________________
           cd Nisha-Fletcher
           gradle test
           cd ..
+
           
+  Veronique-Robledo:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3         
       - name: Veronique-Robledo
         run: |
-          echo _______________________________Veronique-Robledo________________________________________
           cd Veronique-Robledo
           gradle test
           cd ..
 
+          
+  William-Steinbach:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
       - name: William-Steinbach
         run: |
           echo _______________________________William-Steinbach________________________________________
