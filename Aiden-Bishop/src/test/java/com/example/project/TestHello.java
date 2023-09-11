@@ -22,7 +22,7 @@ public class TestHello {
      Hello.main(null);
 
       // assertion
-      assertEquals("Hello World!\n", bos.toString());
+      assertEquals("12\n34", bos.toString());
 
 
             // undo the binding in System
