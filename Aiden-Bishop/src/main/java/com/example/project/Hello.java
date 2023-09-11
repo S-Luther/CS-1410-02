@@ -8,12 +8,18 @@ package com.example.project;
 
 public class Hello {
 
-    static void Print(){
-        System.out.println("Hello World!");
-    }
+    // static void Print(){
+    //     System.out.println("Hello World!");
+    // }
 
 public static void main(String[] i){
-    Print();
+    int [][] rayray = {{1, 2}, {3, 4}}
+    
+    for (int i = 0, i < 2, i++;){
+        for (int j = 0, j < 2, j++;){
+            System.out.print(rayray[i][j] + " ");
+        }
+    }
 	
     }
 }

@@ -2,16 +2,17 @@ package com.example.project;
 
 public class Hello {
 
-    static void Print(String s){
-        System.out.println(s);
-
-    }
 
 	public static void main(String[] args){
-        String print [] = ("Hello World!");
-        Print(print);
-
-    }
+        int array[][] = {{1,2}, {3,4}};
+       for(int i = 0; i<2; i++){
+        for(int j = 0; j<2; j++){
+        System.out.println(array[i][j]);
+       }
+       
+        System.out.println();
+       }
 
 }
 
+}

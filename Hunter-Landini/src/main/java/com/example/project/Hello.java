@@ -1,15 +1,16 @@
 package com.example.project;
 
 public class Hello {
+    int arr[][] = {1,2},{3,4};
 
-    public String Print(String i) {
-        System.out.Println(i);
-    }
-    
+
 	public static void main(String[] args) {
-        public Greeting[] = {"Hello World!"};
-
-        Print(Greeting[0]);
+       for(i, i < 2, i++) {
+        for(j, j < 2, j++) {
+            System.out.print(arr[i][j] + " ");
+        }
+        System.out.println();
+       }
     }
 }
 
