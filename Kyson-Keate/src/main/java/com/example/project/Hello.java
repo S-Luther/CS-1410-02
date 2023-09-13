@@ -2,28 +2,26 @@ package com.example.project;
 
 public class Hello {
     public static void main(String[] args){
-        String[] statements= {
-            "Hello World!"
-        }
-        Print(statements[0]);
-        Arraypractice();
-    }
-    public static void Print(String(i)){
-        System.out.println(i);
-    }
-    
-    public static void Arraypractice();{
-        int[][] numbers = {
-            {1,2},
-            {3,4}
-        }
-        for(int i = 0; i < numbers.length; i++){
-            for(int j = 0; j < numbers[i].length; j++){
-                System.out.print(numbers[i][j] + " ");
+        
+        int[][][] counting = new int[2][2][2];
+        int number = 1;
+        for(int i = 0; i < counting.length; i++){
+            for(int j = 0; j < counting[i].length; j++){
+                for(int k = 0; k < counting[i][j].length; k++){
+                    counting[i][j][k] = number;
+                    number++;
+                } 
             }
-            System.out.println();
+        }
+        for(int i = 0; i < counting.length; i++){
+            for(int j = 0; j < counting[i].length; j++){
+                for(int k = 0; k < counting[i][j].length; k++){
+                    System.out.print(counting[i][j][k]);
+                } 
+            }
         }
     }
 
 }
 
+//perfect

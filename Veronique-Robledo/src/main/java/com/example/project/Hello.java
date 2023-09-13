@@ -5,21 +5,49 @@ public class Hello{
 
     public static void main(String[] args){
 
-        int[][] arr1 = new arr[2][2];
-        int[0][0] = 1;
-        int[0][1] = 2;
-        int[1][0] = 3;
-        int[1][1] = 4;
+        int[][][] arr = new arr[2][2][2];
+            int[0][0][0] = 1;
 
-        for(int i =0;i<2;i++){
-            for(int j=0;j<2;j++){
-                System.out.println(arr[i][j] + " ");
+                    
+                    for(int i =0;i<2;i++){
 
-            }
+
+                        for(int j =0;j<2;j++){
+
+
+                            for(int k =0;k<2;k++){
+                                System.out.print(arr[i + ][j][k]);
+
+                            }
+                        }
+                    }
+
+                    
+                    
+                    for(int i =0;i<2;i++){
+
+
+                        for(int j =0;j<2;j++){
+
+
+                            for(int k =0;k<2;k++){
+                                System.out.println(arr[i][j][k] + " ");
+
+                            }
+                        }
+
+                    } 
         }
 
             System.out.println();
 
     }
+
+
 }
+
+
+
+
+
 
