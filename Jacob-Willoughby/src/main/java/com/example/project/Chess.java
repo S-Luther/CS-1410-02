@@ -3,7 +3,7 @@ package com.example.project;
  * @author Jacob Willoughby
  *
  */
-public class Hello {
+public class Chess {
     static String[][] Board = {
         {"♖","♘","♗","♔","♕","♗","♘","♖"},
         {"♙","♙","♙","♙","♙","♙","♙","♙"},
@@ -13,11 +13,11 @@ public class Hello {
         {null,null,null,null,null,null,null,null},
         {"♟︎","♟︎","♟︎","♟︎","♟","♟︎","♟︎","♟︎"},
         {"♜","♞","♝","♛","♚","♝","♞","♜"},
-    }
+    };
     public static void main (String[] args){
         boolean flipper = false;
         for(int i = 0; i<8; i++){
-            for(int j = 0; j,8; j++){
+            for(int j = 0; j<8; j++){
                 if(Board[i][j] == null){
                     if(flipper == true){
                         System.out.print("████");

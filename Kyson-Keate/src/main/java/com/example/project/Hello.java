@@ -2,26 +2,30 @@ package com.example.project;
 
 public class Hello {
     public static void main(String[] args){
-        
-        int[][][] counting = new int[2][2][2];
-        int number = 1;
-        for(int i = 0; i < counting.length; i++){
-            for(int j = 0; j < counting[i].length; j++){
-                for(int k = 0; k < counting[i][j].length; k++){
-                    counting[i][j][k] = number;
-                    number++;
-                } 
-            }
-        }
-        for(int i = 0; i < counting.length; i++){
-            for(int j = 0; j < counting[i].length; j++){
-                for(int k = 0; k < counting[i][j].length; k++){
-                    System.out.print(counting[i][j][k]);
-                } 
-            }
+        String rotation = "U";
+        switch(rotation.toLowerCase()){
+            case "u":
+                System.out.println("Up");
+                break;
+            case "d":
+                System.out.println("Down");
+                break;
+            case "r":
+                System.out.println("Right");
+                break;
+            case "l":
+                System.out.println("Left");
+                break;
+            case "f":
+                System.out.println("Front");
+                break;
+            case "b":
+                System.out.println("Back");
+                break;
+            default:
         }
     }
 
 }
 
-//perfect
+//looks great!

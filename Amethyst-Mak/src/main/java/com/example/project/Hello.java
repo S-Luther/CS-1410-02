@@ -3,16 +3,26 @@ package com.example.project;
 public class Hello {
 
     public static void main(String[] args){
-        int[][] array = {
-            {1, 2},
-            {3, 4}
-        };
-        for (int i = 0; i < 2; i++){
-            for (int j = 0; j < 2; j++){
-                System.out.print(array[i][j]);
-            }
-            System.out.println();
-        }
+        switch (String[] moves):
+            case "U":
+                System.out.println("Up");
+                break;
+            case "D":
+                System.out.println("Down");
+                break;
+            case "R":
+                System.out.println("Right");
+                break;
+            case "L":
+                System.out.println("Left");
+                break;
+            case "F":
+                System.out.println("Front");
+                break;
+            case "B":
+                System.out.println("Back");
+                break;
+            
     } 
 
 }

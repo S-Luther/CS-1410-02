@@ -2,21 +2,31 @@ package com.example.project;
 
 public class Hello {
 
-	public static void main(String[] args){
-        int a=1;
-        int[][][] arr = new int[2][2][2];
-        for (int i =0; i<2; i++){
-            for (int j =0; j<2; j++){
-                for (int k =0; k<2; k++){
-                    arr[i][j][k]=a;
-                    System.out.print(a + " ");
-                    a++;
-                }
-                System.out.println();
-            }
-            System.out.println();
+    public static void main(String[] args){
+
+        String cube = "U";
+
+        switch(cube.toLowerCase()){
+            case "u":
+                System.out.println("Up");
+                break;
+            case "d":
+                System.out.println("Down");
+                break;
+            case "r":
+                System.out.println("Right");
+                break;
+            case "l":
+                System.out.println("Left");
+                break;
+            case "f":
+                System.out.println("Front");
+                break;
+            case "b":
+                System.out.println("Back");
+                break;
         }
+        
     }
 }
-// does it run right?
-// a couple more changes need to be made it looks like.
+
