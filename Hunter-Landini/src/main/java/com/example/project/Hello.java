@@ -4,31 +4,30 @@ public class Hello {
     
                      
 	public static void main(String[] args) {
-        String moves = "Up"
+        String moves = "U";
         switch(moves.toLowerCase()) {
-            case:"up":
-                System.out.println("Up")
+            case "u":
+                System.out.println("Up");
                 break;
-            case:"down":
-                System.out.println("Up")
+            case "d":
+                System.out.println("Down");
                 break;
-            case:"up":
-                System.out.println("Up")
+            case "r":
+                System.out.println("Right");
                 break;
-            case:"up":
-                System.out.println("Up")
+            case "l":
+                System.out.println("Left");
                 break;
-            case:"up":
-                System.out.println("Up")
+            case "f":
+                System.out.println("Front");
                 break;
-            case:"up":
-                System.out.println("Up")
+            case "b":
+                System.out.println("Back");
                 break;
-            
         }
 
-       }
+    } 
 
-    }
 }
+
 

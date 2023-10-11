@@ -1,48 +1,35 @@
 package com.example.project;
 
-
 public class Hello{
 
     public static void main(String[] args){
 
-        int = U;
-        switch() {
-
-            case U:
-            System.out.println("Up");
-            break;
-
-            case D:
-            System.out.println("Down")
-            break;
-
-            case R:
-            System.out.println("Right");
-            break;
-
-            case L:
+        String moves= "U";
+        switch(moves.toLowercase()) {
+            case "u":
+                System.out.println("Up");
+                break;
+            case "d":
                 System.out.println("Down");
-            break;
-
-            case F:
-            System.out.println("Front");
-            break;
-
-            case B:
-            System.out.println("Back");
-            break;
-
-
+                break;
+            case "r":
+                System.out.println("Right");
+                break;
+            case "l":
+                System.out.println("Down");
+                break;
+            case "f":
+                System.out.println("Front");
+                break;
+            case "b":
+                System.out.println("Back");
+                break;
         }
-
-
-
-    }
-
-
+    } 
 }
 
 
+//actaully make sure you wrap the cases in ""
 
 
 

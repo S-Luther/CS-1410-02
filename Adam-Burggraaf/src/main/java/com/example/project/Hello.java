@@ -4,20 +4,27 @@ public class Hello {
 
     public static void main(String[] args){
 
-        String day = "Tues";
+        String move = "U";
 
-        switch(day.toLowerCase()){
-            case "mon":
-                //code block
+        switch(move.toLowerCase()){
+            case "u":
+                System.out.println("Up");
                 break;
-            case "tues":
-                //code block
+            case "d":
+                System.out.println("Down");
                 break;
-            case "wed":
+            case "r":
+                System.out.println("Right");
                 break;
-            case "thurs":
+            case "l":
+                System.out.println("Left");
                 break;
-            case "fri":
+            case "f":
+                System.out.println("Front");
+                break;
+        
+            case "b":
+                System.out.println("Back");
                 break;
         }
 

@@ -5,24 +5,24 @@ public class Hello {
 
     public static void main(String[] args){
 
-        String dir = "u";
+        String dir = "f";
         
         switch(dir.toLowerCase()){
             case "u":
-                return "Up";
+                System.out.println("Up");
             case "d":
-                return "Down";
+                System.out.println("Down");
             case "r":
-                return "Right";
+                System.out.println("Right");
             case "l":
-                return "Left";
+                System.out.println("Left");
             case "f":
-                return "Front";
+                System.out.println("Front");
             case "b":
-                return "Back"
+                System.out.println("Back");
         }
 
-
+//use a println instead of a return.
         
     }
 }
