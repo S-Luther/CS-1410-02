@@ -1,33 +1,27 @@
 package com.example.project;
 
+class Friend {
+    private boolean happy;
+    private String name;
+
+    private Friend(String N) {
+        name = N;
+    }
+
+    public makeHappy() {
+        happy = true;
+    }
+
+    public makeSad() {
+        happy = false;
+    }
+}
+
 public class Hello {
-    
-                     
+
 	public static void main(String[] args) {
-        String moves = "U";
-        switch(moves.toLowerCase()) {
-            case "u":
-                System.out.println("Up");
-                break;
-            case "d":
-                System.out.println("Down");
-                break;
-            case "r":
-                System.out.println("Right");
-                break;
-            case "l":
-                System.out.println("Left");
-                break;
-            case "f":
-                System.out.println("Front");
-                break;
-            case "b":
-                System.out.println("Back");
-                break;
-        }
-
+        
     } 
-
 }
 
 

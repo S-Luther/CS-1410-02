@@ -3,33 +3,23 @@ package com.example.project;
 public class Hello{
 
     public static void main(String[] args){
+        
+        Hello hello = new Hello();
 
-        String moves= "U";
-        switch(moves.toLowercase()) {
-            case "u":
-                System.out.println("Up");
-                break;
-            case "d":
-                System.out.println("Down");
-                break;
-            case "r":
-                System.out.println("Right");
-                break;
-            case "l":
-                System.out.println("Down");
-                break;
-            case "f":
-                System.out.println("Front");
-                break;
-            case "b":
-                System.out.println("Back");
-                break;
-        }
-    } 
-}
+       //perfect
 
+       //now just print out hello.sum(4,5) and you are done!
+    int p = hello.sum(4,5)
+    System.out.print(p);
 
-//actaully make sure you wrap the cases in ""
+    }
+    
+   
+            public int sum(int i, int k){
+                //perfect
+                return(i + k);
+                } 
+    }
 
 
 

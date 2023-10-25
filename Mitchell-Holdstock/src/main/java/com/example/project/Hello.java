@@ -1,69 +1,71 @@
 package com.example.project;
 
 
-import java.util.ArrayList;
-import java.util.Scanner;
 
+class Enemy{
 
+    private int health = 10;
 
+    private String name;
+
+    public Enemy(String Name){
+        name = Name;
+        System.out.println(Name + " has come to battle!");
+    }
+
+    public Friend(String Name){
+        name = Name;
+        System.out.println(Name + " has come to help!");
+    }
+
+    private boolean happy(){
+        boolean emo=1;
+    }
+
+    private boolean sad(){
+        boolean emo=0;
+    }
+
+    public static
+    
+
+    private void die(){
+
+        name = "deceased " + name;
+    }
+
+    public void askName(){
+        System.out.println(name);
+    }
+
+    public void battle(){
+        health--;
+        System.out.println(name+" has taken a hit, its new health is: "+health);
+
+        if(health==0){
+            die();
+        }
+    }
+}
 
 public class Hello {
-
-    static String[][] face =    {
-                                    {"1","2","3"},
-                                    {"4","5","6"},
-                                    {"7","8","9"},
-                                };
-
-    static void show(String[][] Face){
-        for(String[] i: Face){
-            for(String j: i){
-                System.out.print(j);
-            }
-            System.out.println();
-        }
-    }
-
-    static void rotateFace(String[][] Face, boolean clockwise){
-        String[][] tempFace = new String[3][3];
-
-        for(int i=0; i<3; i++){
-            for(int j=0; j<3; j++){
-                tempFace[i][j] = Face[i][j];
-            }
-        }
-
-        if(!clockwise){
-            for(int i=0; i<3; i++){
-                for(int j=0; j<3; j++){
-                    Face[i][j] = tempFace[j][i];
-                }
-            }
-
-            String[] tempRow = new String[3];
-
-            for(int k=0; k<3; k++){
-                tempRow[k] = Face[0][k];
-            }
-
-            Face[0] = Face[2];
-            Face[2] = tempRow;
-           
-        }
-        else{
-
-        }
-    }
-
-
     public static void main(String[] args){
-        show(face);
-        System.out.println();
-        System.out.println();
 
-        rotateFace(face, false);
+        Enemy ogre = new Enemy("Ogre");
 
-        show(face);
+        ogre.askName();
+
+        for(int i = 0; i<10; i++){
+            ogre.battle();
+        }
+
+        ogre.askName();
+
+        Friend friend = new Friend("Friend");
+
+        friend.askName();
+
+
     }
 }
 

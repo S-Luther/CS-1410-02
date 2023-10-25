@@ -1,29 +1,20 @@
 package com.example.project;
 
-public class Hello{
-    public static void main (String[] args){
-       String moves = "U";
-       switch(moves){
-        case "U":
-            System.out.println("Up");
-            break;
-        case "D":
-            System.out.println("Down");
-            break;
-        case "R":
-            System.out.println("Right");
-            break;
-        case "L":
-            System.out.println("Left");
-            break;
-        case "F":
-            System.out.println("Front");
-            break;
-        case "B":
-            System.out.println("Back");
-            break;
-       }
+//perfect!
+class Friend{
+     public Friend(String N){
+        name = N;
+    }
+     private boolean happy;
+    private String name;
+    //these methods need a return type like void and laos you need to put the logic statement in {}
+    public void makeHappy(){//like so
+        happy = true;
+    }
+    public makeSad(){
+        happy= false
     }
 }
-
-//nice looks like you got it!
+public class Hello{
+   
+}

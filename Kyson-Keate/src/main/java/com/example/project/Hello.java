@@ -1,31 +1,37 @@
 package com.example.project;
-
-public class Hello {
-    public static void main(String[] args){
-        String rotation = "U";
-        switch(rotation.toLowerCase()){
-            case "u":
-                System.out.println("Up");
-                break;
-            case "d":
-                System.out.println("Down");
-                break;
-            case "r":
-                System.out.println("Right");
-                break;
-            case "l":
-                System.out.println("Left");
-                break;
-            case "f":
-                System.out.println("Front");
-                break;
-            case "b":
-                System.out.println("Back");
-                break;
-            default:
+class Friend{
+    private boolean happy;
+    private String name;
+    public Friend (String Name){
+        name = Name;
+        System.out.println("Hanging out with " + name);
+    }
+    public void makeHappy(){
+        happy = true;
+        friendMood();
+    }
+    public void makeSad(){
+        happy = false;
+        friendMood();
+    }
+    private void friendMood(){
+        if(happy = true){
+            System.out.println(name + " seems happy today");
+        }
+        else if(happy = false){
+            System.out.println(name + " seems sad today");
+        }
+        else{
+            System.out.println(name + "'s expression is unreadable");
         }
     }
 
 }
 
-//looks great!
+public class Hello {
+    public void main(String[] args){
+        Friend John = new Friend("John");
+        John.makeHappy();
+        
+    }
+}

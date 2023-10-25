@@ -1,58 +1,66 @@
 package com.example.project;
-public class Hello{
 
-public static void main(String[] args){
- 
-int [][] a = {
-{1, 2},
-{3, 4}
-};
+class Friend{
 
- for(int i = 0; i <2; i++){
-        for(int j = 0; j <2; j++){
-                System.out.print(a[i][j]+ "");
+    private String name;
+    private boolean happy;
+
+public Friend(String N){
+
+        name = N;
+        System.out.println(name);
+    }
+
+//
+    p
+}
+
+
+
+class Enemy{
+
+    private int health = 10;
+
+    private String name;
+
+    public Enemy(String Name){
+        name = Name;
+        System.out.println(Name + " has come to battle!");
+    }
+
+    private void die(){
+
+        name = "deceased " + name;
+    }
+
+    public void askName(){
+        System.out.println(name);
+    }
+
+    public void battle(){
+        health--;
+        System.out.println(name+" has taken a hit, its new health is: "+health);
+
+        if(health==0){
+            die();
         }
-        System.out.println();
- }
+    }
+}
 
+public class Hello {
+    public static void main(String[] args){
 
- 
- /*
-    boolean flipper = false
+        Enemy ogre = new Enemy("Ogre");
 
-    for(int i = 0; i <8; i++){
-        for(int j = 0; j <8; j++){
-            if (Board[i][j]==null){
-                if(flipper){
-                    System.out.print("||"+ Board[i][j]+ "||");
-                } 
-                else{
-                System.out.print("    ");
-                }
-            flipper = !flipper
-            }
-    System.out.println();
-    flipper = !flipper
+        ogre.askName();
+
+        for(int i = 0; i<10; i++){
+            ogre.battle();
+        }
+
+        ogre.askName();
+
 
     }
-    */
-
 }
 
-/*
-public class Hello {
-static String [][] Board = {
-                                {"R","H","B","K","Q","B","H","R"},
-                                {"P","P","P","P","P","P","P","P"},
-                                {null, null, null, null, null, null, null, null, },
-                                {null, null, null, null, null, null, null, null, },
-                                {null, null, null, null, null, null, null, null, },
-                                {null, null, null, null, null, null, null, null, },
-                                {"P","P","P","P","P","P","P","P"},
-                                {"R","H","B","Q","K","B","H","R"},
-
-                            };
-
-}
-*/
-}
