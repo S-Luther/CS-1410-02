@@ -12,12 +12,13 @@ class friend{
         name = N;
     }
 
-    public void makeHappy();
-        happy = 1;
+    public void makeHappy(happy h){
+        h = 1;
+    }
 
-    public void makeSad();
+    public void makeSad(){
         happy = 0;
-
+    }
 }
 public class Hello {    
     public static void main(String[] args){

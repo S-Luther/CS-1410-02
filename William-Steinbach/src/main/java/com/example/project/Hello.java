@@ -1,20 +1,15 @@
 package com.example.project;
+public class Hello {
+    public static void main(String[] args){
 
-//perfect!
-class Friend{
-     public Friend(String N){
-        name = N;
+        Cat Cake = new Cat("Cake");
+
+        Dog Fido = new Dog("Fido");
+
+        Parrot Blue = new Parrot("Blue");
+
+        Cat.feed(cake);
+        Dog.walk(fido);
+        Parrot.talk(blue);
     }
-     private boolean happy;
-    private String name;
-    //these methods need a return type like void and laos you need to put the logic statement in {}
-    public void makeHappy(){//like so
-        happy = true;
-    }
-    public void makeSad(){
-        happy= false
-    }
-}
-public class Hello{
-   
 }
