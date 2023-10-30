@@ -5,17 +5,21 @@ class Friend{
     private String name;
     private boolean happy;
 
-public Friend(String N){
+    public Friend(String N){
 
         name = N;
         System.out.println(name);
     }
 
-//
-    p
+    public void makeHappy(){
+        happy = true; 
+    }
+    
+    public void makeSad(){
+        happy = false;
+    }
+
 }
-
-
 
 class Enemy{
 
@@ -50,17 +54,14 @@ class Enemy{
 public class Hello {
     public static void main(String[] args){
 
-        Enemy ogre = new Enemy("Ogre");
-
-        ogre.askName();
-
-        for(int i = 0; i<10; i++){
-            ogre.battle();
-        }
-
-        ogre.askName();
 
 
+        // Enemy ogre = new Enemy("Ogre");
+        // ogre.askName();
+        // for(int i = 0; i<10; i++){
+        //     ogre.battle();
+        // }
+        // ogre.askName();
     }
 }
 

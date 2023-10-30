@@ -32,6 +32,7 @@ class Enemy{
     }
 }
 
+//no need for parenthases here
 class Friend(){
     private boolean happy;
     private String name;
@@ -41,11 +42,11 @@ class Friend(){
     }
 
     public void makeHappy(){
-        happy = 1;
+        happy = true;
     }
 
     public void makeSad(){
-        happy = 0;
+        happy = false;
     }
 
     public void findMood(){
@@ -62,6 +63,9 @@ class Friend(){
 public class Hello {
     public static void main(String[] args){
 
+    Friend comrad = new Friend("comrad");
+    makeHappy.comrad();
+    findMood.comrad();
     
     //  Enemy ogre = new Enemy("Ogre");
 

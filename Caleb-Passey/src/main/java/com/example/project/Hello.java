@@ -1,24 +1,29 @@
 package com.example.project;
 
-//perfect now just add {} after class friend and around the public Enemy
+//cool looking good!
 
-private class friend{}
+class friend{
 
-    private boolean happy
+    private boolean happy = 1;
 
     private String name;
 
-    public Enemy(String Name){
-        name = Name;
-        System.out.println(Name + " has come to battle!");
+    public friend(String N){
+        name = N;
     }
 
-public class Hello {
+    public void makeHappy();
+        happy = 1;
 
-    
-    
+    public void makeSad();
+        happy = 0;
+
+}
+public class Hello {    
     public static void main(String[] args){
-        
+        friend Jon = new Friend(Jon);
+
+        Jon.happy();
     }
 }
 

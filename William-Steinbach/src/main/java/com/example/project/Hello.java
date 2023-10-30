@@ -11,7 +11,7 @@ class Friend{
     public void makeHappy(){//like so
         happy = true;
     }
-    public makeSad(){
+    public void makeSad(){
         happy= false
     }
 }

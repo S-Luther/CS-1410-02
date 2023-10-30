@@ -1,7 +1,7 @@
 package com.example.project;
 
 
-
+//maybe rename this to friend, and then you can remove the enemy constructor on like 11
 class Enemy{
 
     private int health = 10;
@@ -12,23 +12,7 @@ class Enemy{
         name = Name;
         System.out.println(Name + " has come to battle!");
     }
-
-    public Friend(String Name){
-        name = Name;
-        System.out.println(Name + " has come to help!");
-    }
-
-    private boolean happy(){
-        boolean emo=1;
-    }
-
-    private boolean sad(){
-        boolean emo=0;
-    }
-
-    public static
     
-
     private void die(){
 
         name = "deceased " + name;
@@ -48,6 +32,33 @@ class Enemy{
     }
 }
 
+class Friend{
+    private String name;
+ public Friend(String Name){
+        name = Name;
+        System.out.println(Name + " has come to help!");
+    }
+
+    private boolean happy(){
+        boolean emo=true;
+        return emo;
+    }
+
+    public void makeHappy(){
+       boolean emo=true;
+       System.out.println("Friend is happy: "+ emo);
+    }
+
+    public void makeSad(){
+        boolean emo=false;
+        System.out.println("Friend is happy: "+ emo);
+    }
+    public void askName(){
+        System.out.println(name);
+    }
+
+}
+
 public class Hello {
     public static void main(String[] args){
 
@@ -64,6 +75,10 @@ public class Hello {
         Friend friend = new Friend("Friend");
 
         friend.askName();
+
+        friend.makeHappy();
+
+        friend.makeSad();
 
 
     }

@@ -4,8 +4,16 @@ class Friend{
     private boolean happy;
     private String name;
 
-    public Friend(String Name){
-        
+    public Friend(String N){
+        name = N;
+    }
+
+    public void makeHappy(){
+        happy = true;
+    }
+
+    public void makeSad(){
+        happy = false;
     }
 }
 
@@ -21,7 +29,7 @@ public class Hello {
 }
 
 
-package com.example.project;
+// package com.example.project;
 
 
 

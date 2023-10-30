@@ -8,6 +8,15 @@ public int sum( int i, int j){
    }
    public static void main(String[] args){
 
+    
+        Friend gregory= new Friend("Gregory");
+
+            gregory.makehappy();
+            System.out.println(name + "is" + happy);
+
+
+
+
    
     Hello h = new Hello();
 
@@ -16,9 +25,6 @@ public int sum( int i, int j){
    }
 
 
-    //perfect!
-
-// thanks!
 
 
 
@@ -28,6 +34,28 @@ public int sum( int i, int j){
 
 
 	
+
+
+
+}
+
+class Friend {
+    private boolean happy = true;
+    private String name;
+    public Friend(String N){
+
+        name = N;
+
+    }
+    public void makeHappy(){
+        happy = true;
+    }
+    public void makeSad(){
+        happy= false;
+    }
+
+
+
 
 
 

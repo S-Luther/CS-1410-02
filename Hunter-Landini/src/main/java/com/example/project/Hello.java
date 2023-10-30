@@ -8,11 +8,12 @@ class Friend {
         name = N;
     }
 
-    public makeHappy() {
+
+    public void makeHappy() {
         happy = true;
     }
 
-    public makeSad() {
+    public void makeSad() {
         happy = false;
     }
 }
@@ -25,3 +26,4 @@ public class Hello {
 }
 
 
+//if you'd like you should add some interactions with an object down in the main method.

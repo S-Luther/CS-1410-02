@@ -43,11 +43,12 @@ class Friend {
 
     public void makeHappy(){
         happy = true;
-        System.out.print(name + " is happy!")
+        System.out.print(name + " is happy! :)")
     }
 
     public void makeSad(){
         happy = false;
+        System.out.print(name + " is sad... :(")
     }
 }
 
@@ -55,6 +56,10 @@ public class Hello {
     public static void main(String[] args){
 
         Enemy ogre = new Enemy("Ogre");
+        Friend sam = new Friend("Sam");
+
+        sam.makeSad();
+        same.makeHappy();
 
         ogre.askName();
 
