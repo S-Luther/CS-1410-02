@@ -6,6 +6,10 @@ public class Cat {
     private int mood = 1;
     private int energy = 1;
 
+    public String getName(){
+        return name;
+    }
+
     public void goOnWalk() {
         mood++;
         hunger++;
@@ -16,6 +20,14 @@ public class Cat {
         mood++;
         hunger--;
         energy++;
+    }
+    
+    public void DogFight(Cat c Dog n){
+        name = c;
+        n = Dog.getName();
+        System.out.println(c + "scrattched " + n);
+        mood--;
+        energy--;
     }
 
 }

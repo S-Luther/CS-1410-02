@@ -9,12 +9,9 @@ public int sum( int i, int j){
    public static void main(String[] args){
 
     
-        Friend gregory= new Friend("Gregory");
-
-            gregory.makehappy();
-            System.out.println(name + "is" + happy);
-
-
+        Parrot Jimmy = new Parrot("Jimmy");
+        Cat Sammy = new Cat("Sammy");
+        Dog Greg = new Dog("Greg");
 
 
    

@@ -5,20 +5,14 @@ package com.example.project;
  */
 public class Hello {
 
-    public int sum(int x, int y){
-        return (x + y);
-    };
+    Cat JuJu = new Cat("JuJu");
+    Dog Bonkers = new Dog("Bonkers");
+    Parrot Twitts = new Parrot("Twitts");
 
-    public static void main(String[] args){
+    JuJu.feed();
 
-        Hello h = new Hello();
+    JuJu.DogFight(JuJu Bonkers);
 
-        h.sum(1, 2);
-
-
-
-    }
 }
 
 
-//Looks good!
