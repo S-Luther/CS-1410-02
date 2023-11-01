@@ -1,14 +1,12 @@
 package com.example.project;
 
 
-public class Cat {
+public class Cat extends Animal{
 
-    private String mood = neutral;
-    private String hunger = neutral;
-    private int energyLevels = 2;
+public Cat(String n){
 
 
-
+    }
 
 
 

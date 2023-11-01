@@ -6,6 +6,7 @@ public class Hello {
         Cat charlie = new Cat("Charlie");
         Dog oliver = new Dog("Oliver");
         Parrot wilbur = new Parrot("Wilbur");
+        Parakeet jeff = new Parakeet("Jeff");
 
         //Cat Interactions
         charlie.play();
@@ -24,5 +25,11 @@ public class Hello {
         wilbur.feed();
         wilbur.nap();
         wilbur.observe();
+
+        //Parakeet Interactions
+        jeff.fly();
+        jeff.feed();
+        jeff.nap();
+        jeff.observe();
     } 
 }

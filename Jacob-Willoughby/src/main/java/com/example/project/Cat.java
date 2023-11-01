@@ -1,31 +1,14 @@
 package com.example.project;
 
-public class Cat {
-    private String name;
-    private int hunger = 1;
-    private int mood = 1;
-    private int energy = 1;
+public class Cat extends mammal {
 
-    public String getName(){
-        return name;
+    public Cat(String n){
+        name = n;
     }
-
-    public void goOnWalk() {
-        mood++;
-        hunger++;
-        energy--;
-    }
-    
-    public void feed() {
-        mood++;
-        hunger--;
-        energy++;
-    }
-    
-    public void DogFight(Cat c Dog n){
-        name = c;
-        n = Dog.getName();
-        System.out.println(c + "scrattched " + n);
+    public void DogFight(Dog n){
+        c = name;
+        nname = n.getName();
+        System.out.println(c + "scrattched " + nname);
         mood--;
         energy--;
     }

@@ -11,7 +11,7 @@ public class Hello {
 
     JuJu.feed();
 
-    JuJu.DogFight(JuJu Bonkers);
+    JuJu.DogFight(Bonkers);
 
 }
 

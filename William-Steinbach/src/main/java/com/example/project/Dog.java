@@ -1,5 +1,5 @@
 package com.example.project;
-public class Dog {
+public class Dog extends Feed {
         private String name;
     public Dog(String n){
         name = n;
@@ -21,10 +21,5 @@ public class Dog {
         mood++;
         energy--;
         hunger++;
-    }
-    public void feed(){
-        mood++;
-        energy++;
-        hunger--;
     }
 }

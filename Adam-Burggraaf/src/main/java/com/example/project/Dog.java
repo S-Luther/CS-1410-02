@@ -1,11 +1,12 @@
 package com.example.project;
 
-Public class Dog {
+public class Dog {
 
- private String mood = neutral;
-    private String hunger = neutral;
-    private int energyLevels = 2;
+ 
+    public Dog(String n){
 
+
+    }
 
 
 

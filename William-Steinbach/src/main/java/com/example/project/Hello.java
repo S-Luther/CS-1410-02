@@ -8,8 +8,8 @@ public class Hello {
 
         Parrot Blue = new Parrot("Blue");
 
-        Cat.feed(cake);
-        Dog.walk(fido);
-        Parrot.talk(blue);
+        Cat.feed(Cake);
+        Dog.walk(Fido);
+        Parrot.talk(Blue);
     }
 }
