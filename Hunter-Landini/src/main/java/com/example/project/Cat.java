@@ -1,10 +1,10 @@
 package com.example.project;
 
-public class Cat {
-    private String mood;
-    private String hunger;
-    private String energy;
-    private String name;
+import com.example.project.Interfaces.Playable;
+import com.example.project.Interfaces.Feedable;
+
+public class Cat extends Pet implements Playable{
+    
 
     public Cat(String n) {
         name = n;
@@ -14,26 +14,15 @@ public class Cat {
     }
 
     public void play() {
-        System.out.println("You played with " +name);
+        System.out.println("You played with" + name + "by using a pointer laser");
         mood = "good";
         hunger = "hungry";
         energy = "tired";
     }
 
+    
     public void feed() {
-        System.out.println("You fed " +name);
+        System.out.println("You fed " + name " some cat food");
         hunger = "full";
-    }
-
-    public void nap() {
-        System.out.println("You let " +name+ " sleep");
-        energy = "awake";
-    }
-
-    public void observe() {
-        System.out.println(name+ " is " + mood);
-        System.out.println(name+ " is " + hunger);
-        System.out.println(name+ "is " +energy);
-        System.out.println();
     }
 }

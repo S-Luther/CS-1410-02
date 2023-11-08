@@ -1,6 +1,6 @@
 package com.example.project;
 
-public class animal {
+public class animal implements actions{
     protected String name;
     protected int hunger = 1;
     protected int mood = 1;
@@ -16,6 +16,10 @@ public class animal {
     public void feed(){
         mood++;
         hunger--;
+    }
+    public void rest(){
+        mood++;
+        hunger++;
         energy++;
     }
 }

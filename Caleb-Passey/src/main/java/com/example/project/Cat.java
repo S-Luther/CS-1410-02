@@ -1,8 +1,8 @@
 package com.example.project;
 
-public class Parrot {
+public class Cat {
 
-    public Parrot(String n){
+    public Cat(String n){
         name = n;
         System.out.println("Hi I'm "+n);
     }

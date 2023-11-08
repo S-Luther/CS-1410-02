@@ -1,6 +1,6 @@
 package com.example.project;
 
-public class Parrot{
+public class Parrot extends Pet{
 
     private String name;
 
@@ -13,8 +13,4 @@ public class Parrot{
         Energy--;
     }
 
-    public void eatCrackers{
-        Hunger--;
-        Mood++;
-    }
 }

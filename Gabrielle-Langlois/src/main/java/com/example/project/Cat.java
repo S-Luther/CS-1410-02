@@ -1,6 +1,6 @@
 package com.example.project;
 
-public class Cat{
+public class Cat extends Mammal{
 
     private String name;
     private int Mood;
@@ -11,13 +11,8 @@ public class Cat{
         name = n;
     }
     
-    public void eatFood{
-        Mood++;
-        Hunger++;
-        Energy++;
-    }
 
-    public void ruinTheCouch{
+    public void ruinTheCouch(){
         Mood++;
         Hunger++;
         Energy--;

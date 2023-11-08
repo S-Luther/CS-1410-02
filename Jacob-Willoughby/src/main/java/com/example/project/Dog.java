@@ -1,6 +1,6 @@
 package com.example.project;
 
-public class Dog extends mammal {
+public class Dog extends mammal implements actions{
 
     
     public void CatFight(Cat c){
@@ -9,6 +9,9 @@ public class Dog extends mammal {
         System.out.println(n + "bit " + cname);
         mood--;
         energy--;
+    }
+    public void speak(){
+        System.out.println("Bork");
     }
 
 }

@@ -7,9 +7,10 @@ private int Mood = 5;
 private int Hunger = 5;
 private int Energy = 5;
 
-public String askName(String name){
+public void getName(String name){
     Name = name;
-    System.out.println("This cats name is " + name)
+    System.out.println("This cats name is " + name);
+    return name;
     }
 
 public void askStats(){

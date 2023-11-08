@@ -1,6 +1,9 @@
 package com.example.project;
 
-public class Parrot extends Bird{
+import com.example.project.Interfaces.Feedable;
+import com.example.project.Interfaces.Flyable;
+
+public class Parrot extends Pet implements Flyable{
 
     public Parrot(String n) {
         name = n;
@@ -15,4 +18,16 @@ public class Parrot extends Bird{
         hunger = "full";
         energy = "tired";
     }    
+
+    public void fly() {
+        System.out.println(name + "flew around a little bit");
+        energy = "tired";
+        hunger = "hungry";
+    }
+
+    
+    public void feed() {
+        System.out.println("You fed " + name " some birdfeed");
+        hunger = "full";
+    }
 }

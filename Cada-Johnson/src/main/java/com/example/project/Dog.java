@@ -9,9 +9,10 @@ private int Hunger = 5;
 private int Energy = 5;
 
 
-public String askName(String name){
+public String getName(String name){
     Name = name;
-    System.out.println("This dogs name is " + name)
+    System.out.println("This dogs name is " + name);
+    return name;
     }
 
 public void askStats(){
@@ -22,8 +23,8 @@ public void askStats(){
 }
 
 public void eatFood(){
-    Energy++
-    Hunger--
+    Energy++;
+    Hunger--;
     }
 
 }

@@ -7,13 +7,13 @@ private String Name;
 private int Mood = 5;
 private int Hunger = 5;
 private int Energy = 5;
-private String[] canSpeak;
-private int numberOfWords = 0;
 
-public String askName(String name){
+public String getName(String name){
     Name = name;
-    System.out.println("This cats name is " + name)
+    System.out.println("This cats name is " + name);
+    return Name;
 }
+
 
 public void askStats(){
     System.out.println(Name);
@@ -23,18 +23,12 @@ public void askStats(){
 }
 
 public void eatFood(){
-    Energy++
-    Hunger--
+    Energy++;
+    Hunger--;
 }
 
-public String teachWords(String word){
-    canSpeak[] = 
-    numberOfWords
-}
-
-public String speak(){
+public void speak(string Words){
+    System.out.println(Name + " says '" Words "'");
 
 }
-
-
 }
